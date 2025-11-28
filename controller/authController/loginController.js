@@ -2,7 +2,6 @@
 const userSchema = require('../../Model/userSchema')
 
 const loginController = async (req, res)=>{
-    console.log(req.body)
     const {inputUserName, password} = req.body
     const CurrentUser = await userSchema.findOne({userName: inputUserName})
     // res.send(CurrentUser)

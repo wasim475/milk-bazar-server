@@ -4,5 +4,5 @@ const authRoute = require("./authRoute")
 const productRoute = require("./productRoute")
  
 _.use("/auth", authRoute)
-// _.use("/products", productRoute)
+_.use("/acc", productRoute)
 module.exports = _
